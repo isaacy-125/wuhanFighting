@@ -6,6 +6,10 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": "./",
+    "paths": {
+      "fetch": ["src/API/axios.ts"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
