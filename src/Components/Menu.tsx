@@ -1,11 +1,11 @@
 import React, { useRef, useState, useEffect, useContext } from 'react';
 import { Menu, Icon } from 'antd';
 import axios from '@axios';
+import { observer } from 'mobx-react-lite'
 import StoreContext from '@StoreContext';
 
 
-const MenuApp = () => {
-    // @ts-ignore
+const MenuApp = observer(() => {
     const { store } = useContext(StoreContext);
     // 初始化选中菜单
     const [defaultSelectedKeys, setDefaultSelectedKeys] = useState(['summarize']);
@@ -46,6 +46,6 @@ const MenuApp = () => {
             ))}
         </Menu>
     )
-};
+});
 
 export default MenuApp;
