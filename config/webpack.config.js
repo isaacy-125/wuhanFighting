@@ -295,6 +295,8 @@ module.exports = function(webpackEnv) {
         .map(ext => `.${ext}`)
         .filter(ext => useTypeScript || !ext.includes('ts')),
       alias: {
+        '@axios': path.resolve(__dirname, '../src/API/axios'),
+        '@StoreContext': path.resolve(__dirname, '../src/Store/StoreContext'),
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',

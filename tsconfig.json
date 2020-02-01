@@ -8,7 +8,8 @@
     ],
     "baseUrl": "./",
     "paths": {
-      "fetch": ["src/API/axios.ts"]
+      "@axios": ["src/API/axios.ts"],
+      "@StoreContext": ["src/Store/StoreContext"]
     },
     "allowJs": true,
     "skipLibCheck": true,
