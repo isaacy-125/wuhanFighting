@@ -1,6 +1,7 @@
 {
   "name": "wuhan-fighting",
   "version": "0.1.0",
+  "homepage": "https://isaacy-125.github.io/wuhanFighting",
   "private": true,
   "dependencies": {
     "@babel/core": "7.8.4",
@@ -75,7 +76,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -158,6 +161,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "babel-plugin-import": "^1.13.0",
     "babel-preset-react-app": "^9.1.1",
     "pnp-webpack-plugin": "^1.6.0",

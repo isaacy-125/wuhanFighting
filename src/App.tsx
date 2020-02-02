@@ -1,6 +1,7 @@
 import React  from 'react';
 import { observer, useObservable } from 'mobx-react-lite'
 import StoreContext from '@StoreContext';
+import { Spin } from 'antd';
 
 import MenuApp from "./Components/Menu";
 import ContentApp from "./Components/Content";
@@ -9,21 +10,30 @@ import './App.css';
 const App = observer(() => {
     const store = useObservable({
         data: {},
+        loading: false,
         setData(data: any): any {
             store.data = JSON.parse(JSON.stringify(data));
+        },
+        setLoading(loading: boolean): void {
+            store.loading = loading;
         },
         get getData(): any {
             return JSON.parse(JSON.stringify(store.data));
         },
+        get getLoading(): boolean {
+            return store.loading;
+        }
     });
     return (
           <StoreContext.Provider
               value={{store}}
           >
-              <div className="App">
-                  <MenuApp></MenuApp>
-                  <ContentApp/>
-              </div>
+              <Spin spinning={store.getLoading}>
+                  <div className="App">
+                      <MenuApp></MenuApp>
+                      <ContentApp/>
+                  </div>
+              </Spin>
           </StoreContext.Provider>
   );
 });
