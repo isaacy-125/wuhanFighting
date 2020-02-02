@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wuhanFighting/static/css/main.d1b05096.chunk.css",
+    "main.js": "/wuhanFighting/static/js/main.85dcb540.chunk.js",
+    "main.js.map": "/wuhanFighting/static/js/main.85dcb540.chunk.js.map",
+    "runtime-main.js": "/wuhanFighting/static/js/runtime-main.950c10ce.js",
+    "runtime-main.js.map": "/wuhanFighting/static/js/runtime-main.950c10ce.js.map",
+    "static/css/2.48d69694.chunk.css": "/wuhanFighting/static/css/2.48d69694.chunk.css",
+    "static/js/2.b24ef963.chunk.js": "/wuhanFighting/static/js/2.b24ef963.chunk.js",
+    "static/js/2.b24ef963.chunk.js.map": "/wuhanFighting/static/js/2.b24ef963.chunk.js.map",
+    "index.html": "/wuhanFighting/index.html",
+    "precache-manifest.f9e4747c5b6ebba7cf2ce5a2a6fe1dfd.js": "/wuhanFighting/precache-manifest.f9e4747c5b6ebba7cf2ce5a2a6fe1dfd.js",
+    "service-worker.js": "/wuhanFighting/service-worker.js",
+    "static/css/2.48d69694.chunk.css.map": "/wuhanFighting/static/css/2.48d69694.chunk.css.map",
+    "static/css/main.d1b05096.chunk.css.map": "/wuhanFighting/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.b24ef963.chunk.js.LICENSE.txt": "/wuhanFighting/static/js/2.b24ef963.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.950c10ce.js",
+    "static/css/2.48d69694.chunk.css",
+    "static/js/2.b24ef963.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.85dcb540.chunk.js"
+  ]
+}
