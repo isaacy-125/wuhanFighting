@@ -9,3 +9,6 @@ Backup https://service-f9fjwngp-1252021671.bj.apigw.tencentcs.com/release/pneumo
 前端：React + Typescript
 
 UI:  Antd
+
+# 线上
+https://isaacy-125.github.io/wuhanFighting/

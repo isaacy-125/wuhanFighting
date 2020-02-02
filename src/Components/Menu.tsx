@@ -3,6 +3,7 @@ import { Menu, Icon, message } from 'antd';
 import axios from '@axios';
 import { observer } from 'mobx-react-lite'
 import StoreContext from '@StoreContext';
+import moment from 'moment';
 
 
 const MenuApp = observer(() => {
@@ -15,27 +16,43 @@ const MenuApp = observer(() => {
         icon: 'info-circle',
         title: '概括',
         url: '/api/overall',
+    }, {
+        key: 'trend',
+        icon: 'area-chart',
+        title: '趋势',
+        url: '',
     }]);
     // 点击菜单事件
     const handleClick = (e:{key: string}) => {
         console.log(e);
         setDefaultSelectedKeys([e.key]);
+        store.setMenuKey(e.key);
     };
     // 选中菜单更改的回调
     useEffect(() => {
         const item = menuData.current.find(c => c.key === defaultSelectedKeys[0]);
-        store.setLoading(true);
-        axios({
-            method: 'GET',
-            url: item ? item.url : '',
-        }).then((res:any) => {
-            store.setData(res.results);
-            store.setLoading(false);
-            console.log(store.getData);
-        }).catch(() => {
-            store.setLoading(false);
-            message.error('服务器错误，请稍后再试');
-        });
+        if (item && item.url && JSON.stringify(store.getData) == '{}') {
+            store.setLoading(true);
+            axios({
+                method: 'GET',
+                url: item ? item.url : '',
+            }).then((res:any) => {
+                store.setData(res.results);
+                localStorage.setItem('cache', JSON.stringify(res.results));
+                store.setLoading(false);
+                console.log(store.getData);
+            }).catch(() => {
+                    store.setLoading(false);
+                    const data = JSON.parse(localStorage.getItem('cache') as string);
+                    if (data != null) {
+                        message.error(`服务器错误，已使用缓存数据，更新时间${moment(data[0].updateTime).format('YYYY-MM-DD HH:mm:ss')}`);
+                        store.setData(data);
+                    } else {
+                        message.error('服务器错误，请稍后再试');
+                    }
+                }
+            );
+        }
     }, [defaultSelectedKeys, store]);
     return (
         <Menu
