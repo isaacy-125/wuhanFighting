@@ -1,6 +1,7 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite'
 import { Descriptions, List } from 'antd';
+import moment from 'moment';
 
 const Item:any = Descriptions.Item;
 
@@ -13,6 +14,7 @@ interface SummarizeProp {
         suspectedCount: string,
         curedCount: string,
         deadCount: string,
+        updateTime: string,
     },
 }
 
@@ -36,6 +38,7 @@ const SummarizeApp = observer((props: SummarizeProp) => {
                 <Item label="疑似人数">{data.suspectedCount}</Item>
                 <Item label="治愈人数">{data.curedCount}</Item>
                 <Item label="死亡人数">{data.deadCount}</Item>
+                <Item label="更新时间">{data.updateTime ? moment(data.updateTime).format('YYYY-MM-DD HH:mm:ss') : ''}</Item>
             </Descriptions>
             <List
                 style={{

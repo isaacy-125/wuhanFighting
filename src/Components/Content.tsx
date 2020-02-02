@@ -13,6 +13,9 @@ const ContentApp = observer(() => {
           case 'trend':
               const TrendApp = React.lazy(() => import('./Trend'));
               return <TrendApp data={data}></TrendApp>
+          case 'map':
+              const MapApp = React.lazy(() => import('./MapApp'));
+              return <MapApp></MapApp>
           default:
               break;
       }

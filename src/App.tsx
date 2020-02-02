@@ -10,6 +10,7 @@ import './App.css';
 const App = observer(() => {
     const store = useObservable({
         data: {},
+        mapData: [{}],
         loading: false,
         menuKey: 'summarize',
         setData(data: any): any {
@@ -21,6 +22,9 @@ const App = observer(() => {
         setMenuKey(data: string): void {
             store.menuKey = data;
         },
+        setMapData(data: Array<object>): void {
+            store.mapData = data;
+        },
         get getData(): any {
             return JSON.parse(JSON.stringify(store.data));
         },
@@ -29,6 +33,9 @@ const App = observer(() => {
         },
         get getMenuKey(): string {
             return store.menuKey;
+        },
+        get getMapData(): Array<object> {
+            return store.mapData;
         }
     });
     return (
