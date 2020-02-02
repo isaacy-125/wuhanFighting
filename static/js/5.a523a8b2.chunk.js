@@ -1,0 +1,2 @@
+(this["webpackJsonpwuhan-fighting"]=this["webpackJsonpwuhan-fighting"]||[]).push([[5],{745:function(e,t,a){"use strict";a.r(t);var n=a(0),i=a.n(n),s=a(25),r=a(434),h=a.n(r),p=(a(739),Object(s.a)((function(){return i.a.createElement(i.a.Fragment,null,i.a.createElement(h.a,{option:{title:{text:"\u75ab\u60c5\u5206\u5e03",left:"center"},series:[{type:"map",mapType:"china",roam:!1,label:{normal:{show:!1},emphasis:{show:!0}},data:[]}]}}))})));t.default=p}}]);
+//# sourceMappingURL=5.a523a8b2.chunk.js.map
