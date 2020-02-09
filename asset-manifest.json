@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/wuhanFighting/static/css/main.d1b05096.chunk.css",
-    "main.js": "/wuhanFighting/static/js/main.dd5cecef.chunk.js",
-    "main.js.map": "/wuhanFighting/static/js/main.dd5cecef.chunk.js.map",
+    "main.js": "/wuhanFighting/static/js/main.cfc8709f.chunk.js",
+    "main.js.map": "/wuhanFighting/static/js/main.cfc8709f.chunk.js.map",
     "runtime-main.js": "/wuhanFighting/static/js/runtime-main.c8a45a8a.js",
     "runtime-main.js.map": "/wuhanFighting/static/js/runtime-main.c8a45a8a.js.map",
     "static/js/2.6151d2fb.chunk.js": "/wuhanFighting/static/js/2.6151d2fb.chunk.js",
@@ -20,7 +20,7 @@
     "static/js/7.f12dd798.chunk.js": "/wuhanFighting/static/js/7.f12dd798.chunk.js",
     "static/js/7.f12dd798.chunk.js.map": "/wuhanFighting/static/js/7.f12dd798.chunk.js.map",
     "index.html": "/wuhanFighting/index.html",
-    "precache-manifest.dcf8ae77b207aab9cf0f3b0e5f3b2820.js": "/wuhanFighting/precache-manifest.dcf8ae77b207aab9cf0f3b0e5f3b2820.js",
+    "precache-manifest.725211b5af3cb1821dfa50aa7d59df66.js": "/wuhanFighting/precache-manifest.725211b5af3cb1821dfa50aa7d59df66.js",
     "service-worker.js": "/wuhanFighting/service-worker.js",
     "static/css/3.b756fa9a.chunk.css.map": "/wuhanFighting/static/css/3.b756fa9a.chunk.css.map",
     "static/css/4.d39419a5.chunk.css.map": "/wuhanFighting/static/css/4.d39419a5.chunk.css.map",
@@ -32,6 +32,6 @@
     "static/css/3.b756fa9a.chunk.css",
     "static/js/3.51bc1405.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.dd5cecef.chunk.js"
+    "static/js/main.cfc8709f.chunk.js"
   ]
 }

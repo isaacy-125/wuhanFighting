@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b2b32c464b27ac94b9d7f848357acc69",
+    "revision": "7cbb7da4008f512f452ff64245bedb23",
     "url": "/wuhanFighting/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wuhanFighting/static/css/4.d39419a5.chunk.css"
   },
   {
-    "revision": "776bc3c89b784c8c2a41",
+    "revision": "799229e3d3b828f3fdf0",
     "url": "/wuhanFighting/static/css/main.d1b05096.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wuhanFighting/static/js/7.f12dd798.chunk.js"
   },
   {
-    "revision": "776bc3c89b784c8c2a41",
-    "url": "/wuhanFighting/static/js/main.dd5cecef.chunk.js"
+    "revision": "799229e3d3b828f3fdf0",
+    "url": "/wuhanFighting/static/js/main.cfc8709f.chunk.js"
   },
   {
     "revision": "e8a69bb69fd9b12c8763",
